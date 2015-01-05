@@ -1,5 +1,8 @@
+---
+layout: defaut
+title:厂房厂貌
+---
 {% include header.htm %}
-
 <div style="margin-left:auto;margin-right:auto;position:relative;width:1033px">
   <div class="banner">
     <div class="focus">
