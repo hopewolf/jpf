@@ -30,7 +30,108 @@
 </script></head>
 <style type="text/css" id="636318000"></style>
 <link rel="stylesheet" type="text/css" href="./css/main.css">
+<script>
+$(document).ready(function(){
+$("#xgwz").click(
+function()
+{
 
+if($("#dh").css("animation-name")=="dh_xgwz1")
+{
+$("#dh").css("animation-name","dh_xgwz2");
+$("#dh").css("-moz-animation-name","dh_xgwz2");
+$("#dh").css("-webkit-animation-name","dh_xgwz2");
+$("#dh").css("-o-animation-name","dh_xgwz2");
+}
+else
+{
+$("#dh").css("animation-name","dh_xgwz1");
+$("#dh").css("-moz-animation-name","dh_xgwz1");
+$("#dh").css("-webkit-animation-name","dh_xgwz1");
+$("#dh").css("-o-animation-name","dh_xgwz1");
+}
+}
+)
+});
+
+</script>
+<style>
+.donghua{
+animation:animation:dh_xgwz1 5s;
+-moz-animation:dh_xgwz1 5s; /* Firefox */
+-webkit-animation:dh_xgwz1 5s; /* Safari and Chrome */
+-o-animation:dh_xgwz1 5s; /* Opera */
+animation-fill-mode:forwards;
+-webkit-animation-fill-mode:forwards;
+top:120px;position:fixed;height:240px;right:0px;width:29px;z-index:1000;
+}
+
+
+@keyframes dh_xgwz1
+{
+from {width:29px;}
+to {width:220px;}
+}
+
+@-moz-keyframes dh_xgwz1 /* Firefox */
+{
+from {width:29px;}
+to {width:220px;}
+}
+
+@-webkit-keyframes dh_xgwz1 /* Safari and Chrome */
+{
+from {width:29px;}
+to {width:220px;}
+}
+
+@-o-keyframes dh_xgwz1 /* Opera */
+{
+from {width:29px;}
+to {width:220px;}
+}
+
+
+@keyframes dh_xgwz2
+{
+from {width:220px;}
+to {width:29px;}
+}
+
+@-moz-keyframes dh_xgwz2 /* Firefox */
+{
+from {width:220px;}
+to {width:29px;}
+}
+
+@-webkit-keyframes dh_xgwz2/* Safari and Chrome */
+{
+from {width:220px;}
+to {width:29px;}
+}
+
+@-o-keyframes dh_xgwz2/* Opera */
+{
+from {width:220px;}
+to {width:29px;}
+}
+#xgwz{width:24px;margin-top:30px;padding:9px 1px 9px 5px;border-top-left-radius:1em;border-bottom-left-radius:1em;float:left;background-color:#3E8F92;background-clip:border-box;overflow:hidden;color:white}
+#xgwz_nav{width:100%;height:25px;margin-left:24px;border-top-left-radius:0.2em;background-color:#e9e9e9;padding-top:5px;padding-left:7px}
+#xgwz_content{width:100%;height:100%;background-color:#cdd1d1;margin-left:24px;;border-bottom-left-radius:1em;padding-top:20px;padding-left:10px;}
+</style>
+<div class="donghua" id="dh">
+<div id="xgwz"><b>相关网址<b></div>
+<div id="xgwz_nav" ><b style="white-space:nowrap">二级题目</b></div>
+<div id="xgwz_content">
+<ul style="white-space:nowrap">
+<li>一个网址</li>
+<li>一个网址</li>
+<li>一个网址</li>
+<li>一个网址</li>
+<li>一个网址</li>
+</ul>
+</div>
+</div>
 
 
 <script language="javascript" src="http://webapi.amap.com/maps?v=1.3&key=7c01d310473ff443d719fa4a98404a43"></script>
