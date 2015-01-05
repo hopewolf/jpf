@@ -31,29 +31,110 @@
 <style type="text/css" id="636318000"></style>
 <link rel="stylesheet" type="text/css" href="./css/main.css">
 
+<script>
+$(document).ready(function(){
+$("#xgwz").click(
+function()
+{
 
-
-<script language="javascript" src="http://webapi.amap.com/maps?v=1.3&key=7c01d310473ff443d719fa4a98404a43"></script>
-<script language="javascript">
-var mapObj;
-//初始化地图对象，加载地图
-function mapInit() {
-  mapObj = new AMap.Map("iCenter",{
-    rotateEnable:true,
-    dragEnable:true,
-    zoomEnable:true,
-    zooms:[3,18],
-    //二维地图显示视口
-    view: new AMap.View2D({
-      center:new AMap.LngLat(116.397428,39.90923),//地图中心点
-      zoom:13 //地图显示的缩放级别
-    })
-  }); 
+if($("#dh").css("animation-name")=="dh_xgwz1")
+{
+$("#dh").css("animation-name","dh_xgwz2");
+$("#dh").css("-moz-animation-name","dh_xgwz2");
+$("#dh").css("-webkit-animation-name","dh_xgwz2");
+$("#dh").css("-o-animation-name","dh_xgwz2");
 }
-</script>
+else
+{
+$("#dh").css("animation-name","dh_xgwz1");
+$("#dh").css("-moz-animation-name","dh_xgwz1");
+$("#dh").css("-webkit-animation-name","dh_xgwz1");
+$("#dh").css("-o-animation-name","dh_xgwz1");
+}
+}
+)
+});
 
-<!-- 
-<header class="am-topbar am-topbar-fixed-top">
+</script>
+<style>
+.donghua{
+animation:animation:dh_xgwz1 5s;
+-moz-animation:dh_xgwz1 5s; /* Firefox */
+-webkit-animation:dh_xgwz1 5s; /* Safari and Chrome */
+-o-animation:dh_xgwz1 5s; /* Opera */
+animation-fill-mode:forwards;
+-webkit-animation-fill-mode:forwards;
+top:120px;position:fixed;height:240px;right:0px;width:29px;z-index:1000;
+}
+
+
+@keyframes dh_xgwz1
+{
+from {width:29px;}
+to {width:220px;}
+}
+
+@-moz-keyframes dh_xgwz1 /* Firefox */
+{
+from {width:29px;}
+to {width:220px;}
+}
+
+@-webkit-keyframes dh_xgwz1 /* Safari and Chrome */
+{
+from {width:29px;}
+to {width:220px;}
+}
+
+@-o-keyframes dh_xgwz1 /* Opera */
+{
+from {width:29px;}
+to {width:220px;}
+}
+
+
+@keyframes dh_xgwz2
+{
+from {width:220px;}
+to {width:29px;}
+}
+
+@-moz-keyframes dh_xgwz2 /* Firefox */
+{
+from {width:220px;}
+to {width:29px;}
+}
+
+@-webkit-keyframes dh_xgwz2/* Safari and Chrome */
+{
+from {width:220px;}
+to {width:29px;}
+}
+
+@-o-keyframes dh_xgwz2/* Opera */
+{
+from {width:220px;}
+to {width:29px;}
+}
+#xgwz{width:24px;margin-top:30px;padding:9px 1px 9px 5px;border-top-left-radius:1em;border-bottom-left-radius:1em;float:left;background-color:#3E8F92;background-clip:border-box;overflow:hidden;color:white}
+#xgwz_nav{width:100%;height:25px;margin-left:24px;border-top-left-radius:0.2em;background-color:#e9e9e9;padding-top:5px;padding-left:7px}
+#xgwz_content{width:100%;height:100%;background-color:#cdd1d1;margin-left:24px;;border-bottom-left-radius:1em;padding-top:20px;padding-left:10px;}
+</style>
+<div class="donghua" id="dh">
+<div id="xgwz"><b>相关网址<b></div>
+<div id="xgwz_nav" ><b style="white-space:nowrap">二级题目</b></div>
+<div id="xgwz_content">
+<ul style="white-space:nowrap">
+<li>一个网址</li>
+<li>一个网址</li>
+<li>一个网址</li>
+<li>一个网址</li>
+<li>一个网址</li>
+</ul>
+</div>
+</div>
+
+<!-- <header class="am-topbar am-topbar-fixed-top">
   <div class="am-container">
     <h1 class="am-topbar-brand">
       <a href="#"style="font-size:14pt;font-weight:bold;color:rgb(0, 102, 255)">太原市鹏飞加气混凝土厂</a>
@@ -73,10 +154,8 @@ function mapInit() {
     </div>
   </div>
 </header> -->
-<body onLoad="mapInit()" style=" background-color:#62c3e6">
-
+<body>
 <!-- <div style="margin-left:auto;margin-right:auto;position:relative;width:1033px">
-
   <div class="banner">
     <div class="focus">
         <ul class="rslides f426x240 rslides1" style="max-width: 1032px;">
@@ -127,18 +206,13 @@ function mapInit() {
 <div style="width: 1033px;margin-left:auto;margin-right:auto;">
 <div data-am-widget="intro" class="am-intro am-cf am-intro-default am-no-layout">
   <div class="am-intro-hd">
-      <h2 class="am-intro-title">联系我们</h2>
+      <h2 class="am-intro-title">营销网络</h2>
   </div>
   <div class="am-g am-intro-bd" style="width:auto;background-color: rgb(226, 226, 226);">
-    <div class="am-intro-right am-u-sm-7" style="width:auto;background-color: rgb(226, 226, 226);" >
+    <div class="am-intro-right am-u-sm-7" style="width:auto;background-color: rgb(226, 226, 226);">
+    <p style="margin-left:120px">本公司产品现主要销往山西，陕西，内蒙古。随着企业发展，我们将销往更多省市，诚挚期待与您的合作。</p>
+<img style="margin-left:120px;width:800px" src="http://restapi.amap.com/v3/staticmap?location=105.30,37.27&zoom=3&size=700*540&markers=mid,,A:112.30,37.27;111.47,40.29;107.4,33.39&key=ee95e52bf08006f63fd29bcfbcf21df0">
 
-  <div style="width:984px;margin-left:23px">
-  <pre>
-<span style="font-size:1.4em;color:red">（1） 联系电话</span> 
-<span style="font-size:1.2em;color:blue">王经理:    13100002255             樊经理:    18903416600            王部长:     13835139306 </span>
-<span style="font-size:1.4em;color:red">（2） E-mail</span>
-<span style="font-size:1.2em;color:blue">thelanding@126.com</span></pre>
-<div id="iCenter"></div>  </div>
 
     </div>
   </div>
@@ -147,4 +221,45 @@ function mapInit() {
 <br>
 
   
-{% include footer.htm %}
+ <div class="mainbodyCobot  wrapper"></div>
+<div class="bottomCo">
+  <div class="bottom wrapper">
+    <table width="80%" border="0" cellspacing="0" cellpadding="0" class="ke-zeroborder">
+  <tbody>
+    <tr>
+      <td width="17%" align="right">
+        <img src="./img/20140613030041_56090.png" width="70" height="70" alt=""> 
+      </td>
+      <td width="2%" align="right">
+        &nbsp;
+      </td>
+      <td width="80%">
+        <div style="text-align:left;">
+          版权所有：<a>太原市鹏飞加气混凝土厂</a> 
+        </div>
+        <div style="text-align:left;">
+          地址：********  备案号：<a href="http://www.miitbeian.gov.cn/" target="_blank">晋ICP备*****号</a>
+        </div>
+        <div style="text-align:left;">
+          技术支持：<a href="#" target="_blank">********</a>---<a href="#" target="_blank">********</a>（<a href="#" target="_blank">********</a>、<a href="#/" target="_blank">********</a>）
+        </div>
+      </td>
+  
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+</div>
+
+</div>
+
+
+
+<script type="text/javascript">
+  var proRoll_1 = ulRoll("proRoll_1","1","15");
+
+</script>
+<script type="text/javascript" src="./js/diy_js.js"></script>
+
+</body></html>
