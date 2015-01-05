@@ -3,6 +3,7 @@ layout: defaut
 title:合作伙伴
 ---
 {% include header.htm %}
+
 <div style="width: 1033px;margin-left:auto;margin-right:auto;">
 <div data-am-widget="intro" class="am-intro am-cf am-intro-default am-no-layout">
   <div class="am-intro-hd">
