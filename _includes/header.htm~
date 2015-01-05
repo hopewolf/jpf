@@ -1,4 +1,3 @@
-{% include common_header.htm %}
 <script>
 $(document).ready(function(){
 $("#xgwz").click(
